@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="smc" constructor="FileUploaderPCF" version="1.0.4"
+    display-name-key="FileUploaderPCF" description-key="FileUploaderPCF description"
+    control-type="standard">
+
+    <external-service-usage enabled="false">
+    </external-service-usage>
+
+    <property name="label" display-name-key="Label"
+      description-key="The label displayed in the center of the component" of-type="SingleLine.Text"
+      usage="input" required="false" default-value="Drop a file here" />
+    <property name="imageUrl" display-name-key="Image URL"
+      description-key="The image url to display in the component" of-type="SingleLine.Text"
+      usage="input" required="false" default-value="" />
+    <property name="base64" display-name-key="Base64" description-key="The base 64 encoding"
+      of-type="SingleLine.Text" usage="bound" required="false" default-value="" />
+    <property name="base64DataUrl" display-name-key="Base64 Data URL"
+      description-key="The base64 data URL encoding of the file" of-type="SingleLine.Text"
+      usage="bound" required="false" default-value="" />
+    <property name="control" display-name-key="Control"
+      description-key="The control keyword (e.g. reset)"
+      of-type="SingleLine.Text" usage="bound" required="false" default-value="" />
+
+    <resources>
+      <code path="index.ts" order="1" />
+    </resources>
+
+  </control>
+</manifest>
